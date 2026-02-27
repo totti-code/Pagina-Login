@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página de Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <header class="header">
+        <h1>Bem-vindo de volta</h1>
+        <p>Entre com sua conta para continuar</p>
+      </header>
+
+      <form id="loginForm" class="form" autocomplete="on">
+        <label class="field">
+          <span>Email</span>
+          <input id="email" type="email" placeholder="seuemail@exemplo.com" required />
+        </label>
+
+        <label class="field">
+          <span>Senha</span>
+          <div class="password">
+            <input id="password" type="password" placeholder="••••••••" required minlength="6" />
+            <button id="togglePass" type="button" class="toggle" aria-label="Mostrar senha">👁️</button>
+          </div>
+        </label>
+
+        <div class="row">
+          <label class="remember">
+            <input id="remember" type="checkbox" />
+            <span>Lembrar de mim</span>
+          </label>
+
+          <a class="link" href="#" onclick="return false;">Esqueci a senha</a>
+        </div>
+
+        <button class="btn" type="submit">Entrar</button>
+
+        <p id="msg" class="msg" aria-live="polite"></p>
+
+        <div class="divider"><span>ou</span></div>
+
+        <button class="btn ghost" type="button" id="googleBtn">Continuar com Google</button>
+
+        <p class="signup">
+          Não tem conta? <a class="link" href="#" onclick="return false;">Criar conta</a>
+        </p>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <small>Feito por <strong>toti</strong> • HTML/CSS/JS</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
